@@ -28,6 +28,11 @@
     ?>
 <br>
     <form action="page4-euyruieozpugfeopufjfe1.php" method = "post">
+        <?php
+        if ($_POST["password"] != "qpuhjfeazsiepcdspykypeykvusdtaeyzvkzptpiqaeyzkxh" and $_POST["password"] != "") {
+            echo"<p class=\"error\">Mauvais mot de passe !</p>";
+        }
+        ?>
     <label for="password">Password:</label> <input type="password" id="password" name="password"><br /><br />
     <button type = "submit">Login</button>
 </form>

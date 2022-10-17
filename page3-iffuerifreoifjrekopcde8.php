@@ -10,18 +10,15 @@
     <h1>N'allons pas trop vite...</h1>
     <div class="dialog">
         <img class="robot" src="small-robot.png"/>
-        <p class="robot">Oops ^^</p>
-    </div>
-    <div class="dialog">
-        <img class="robot" src="small-robot.png"/>
-        <p class="robot">J'avais laissé le mot de passe par défaut...</p>
-    </div>
-    <div class="dialog">
-        <img class="robot" src="small-robot.png"/>
-        <p class="robot">Mais c'est rectifié ! Maintennat j'ai une jolie base de données bien propre :D</p>
+        <p class="robot">Oops ^^<br><br>J'avais laissé le mot de passe par défaut...<br><br>Mais c'est rectifié ! Maintenant j'ai une jolie base de données bien propre :D</p>
     </div>
 <br>
     <form action="page3-iffuerifreoifjrekopcde8.php method = "post">
+    <?php
+    if ($_POST["password"] != "MonSuperMotDePasseDesEnfers456" and $_POST["password"] != "") {
+        echo"<p class=\"error\">Mauvais mot de passe !</p>";
+    }
+    ?>
         <label for="password">Mot de passe:</label> <input type="text" id="password" name="password"><br /><br />
         <button type = "submit">Se connecter</button>
     </form>
