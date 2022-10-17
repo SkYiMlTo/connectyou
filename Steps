@@ -8,11 +8,11 @@ Second auth :
 Third auth :
     SQLI
 
-Third auth :
+Fourth auth :
     Hidden file in hidden folder
 
-Fourth auth :
+Fifth auth :
     XSS to get admin code
 
-Fifth auth :
+Sixth auth :
     etc/passwd
