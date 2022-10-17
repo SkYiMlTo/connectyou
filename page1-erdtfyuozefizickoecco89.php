@@ -7,24 +7,28 @@
 <body>
 
 <div id="content">
-    <h1>Oh...</h1>
+    <h1>Authentification</h1>
     <div class="dialog">
         <img class="robot" src="small-robot.png"/>
-        <p class="robot">There was a vulnerability thus I fixed it. Otherwise I just reset the password... Would you try to reconnect ?</p>
+        <p class="robot">Rien de très sorcier... il faut jsute se connecter...</p>
+        <br>
     </div>
     <form name="coucou">
-        <input type="text" name="pseudo">
+        <label for="password">Mot de passe:</label> <input type="text" id="password" name="password"><br /><br />
+        <button type = "submit">Se connecter</button>
     </form>
-<button onclick="myFunction()">Connexion</button>
+<button onclick="myFunction()">Se connecter</button>
 </div>
 
 <script>
-    function myFunction() {
+    /*function myFunction() {
         if (document.coucou.pseudo.value==="dur4nd_g4m1ng") {
             location.replace("page2-gibregibfrehzifbhu.php");
-
         }
-
+    }*/
+    window.some_variable = ;
+    if ('<?=$_POST['password']?>'==="dur4nd_g4m1ng") {
+        location.replace("page2-gibregibfrehzifbhu.php");
     }
 </script>
 

@@ -12,6 +12,7 @@
     <div class="dialog">
         <img class="robot" src="small-robot.png"/>
 <p class="robot">Entre ton mot de passe <a href="page1-erdtfyuozefizickoecco89.php">ici</a>.</p>
+        <br>
 </div>
 </body>
 </html>
