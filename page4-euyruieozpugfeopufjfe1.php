@@ -6,7 +6,7 @@
 </head>
 <body>
 <div id="content">
-    <h1>N'allons pas trop vite...</h1>
+    <h1>Pas de Base de données finalement...</h1>
     <div class="dialog">
         <img class="robot" src="small-robot.png"/>
         <p class="robot">De quoi on pourrait parler ? Ah tiens, mon nombre préféré est 42. Oui, la réponse à la vie. Et toi c'est lequel ?<br><br>Ah mince, tu peux pas parler. Et tu pourras pas continuer le challenge, le mot de passe est hyper compliqué.<br><br>Attend c'est lequel déjà ? Ah oui, heureusement que j'ai mon pense-bête de côté !</p>
