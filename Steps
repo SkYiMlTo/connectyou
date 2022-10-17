@@ -1,0 +1,18 @@
+
+First auth :
+    Hardcoded password
+
+Second auth :
+    Common password
+
+Third auth :
+    SQLI
+
+Third auth :
+    Hidden file in hidden folder
+
+Fourth auth :
+    XSS to get admin code
+
+Fifth auth :
+    etc/passwd
