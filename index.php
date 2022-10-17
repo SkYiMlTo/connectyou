@@ -8,7 +8,7 @@
 
 <div id="content">
 
-<h1>Salutation mon cher Admin !</h1>
+    <h1>Salutation mon cher <i>admin</i> !</h1>
     <div class="dialog">
         <img class="robot" src="small-robot.png"/>
 <p class="robot">Entre ton mot de passe <a href="page1-erdtfyuozefizickoecco89.php">ici</a>.</p>

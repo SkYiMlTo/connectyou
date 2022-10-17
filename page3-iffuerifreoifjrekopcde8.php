@@ -10,7 +10,7 @@
     <h1>N'allons pas trop vite...</h1>
     <div class="dialog">
         <img class="robot" src="small-robot.png"/>
-        <p class="robot">Oops ^^<br><br>J'avais laissé le mot de passe par défaut...<br><br>Mais c'est rectifié ! Maintenant j'ai une jolie base de données bien propre :D</p>
+        <p class="robot">Oops ^^<br><br>J'avais laissé le mot de passe par défaut...<br><br>Mais c'est rectifié ! Maintenant j'ai une jolie base de données bien propre :D<br><br>Bon... Je commence à douter que c'est bien toi... Je te remets le login si je me suis trompé D:</p>
     </div>
 <br>
     <form action="page3-iffuerifreoifjrekopcde8.php method = "post">

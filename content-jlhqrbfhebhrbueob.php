@@ -8,7 +8,7 @@
 
 <div id="content">
 
-    <h1>Salutation mon cher Admin !</h1>
+    <h1>Salutation mon cher <i>admin</i> !</h1>
     <div class="dialog">
         <img class="robot" src="small-robot.png"/>
         <p class="robot">Bon ! Tu as passé toutes les barrières de sécurité, je te fais confiance. Voici le contenu de l'application c:</p>
