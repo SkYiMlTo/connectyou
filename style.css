@@ -21,6 +21,9 @@ form{
     border:3px solid #0F0326;
     border-radius: 10px;
 }
+summary{
+    margin:1em;
+}
 
 #content{
     background-color: #585B56;
@@ -48,10 +51,17 @@ p.robot{
     padding: 2em;
     border-radius: 10px;
     color:#0F0326;
-    border: 3px solid #F5F7DC;
+    border: 3px solid #0F0326;
     background-color: #F5F7DC;
 }
-
+.flags{
+    background-color: #3C3B3D;
+    width : 40%;
+    margin : 1em auto 1em auto;
+    padding: 2em;
+    border-radius: 10px;
+    border: 3px solid #585B56;
+}
 
 @font-face {
     font-family: Minecraftia;

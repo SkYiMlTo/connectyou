@@ -19,6 +19,14 @@
     </form>
 </div>
 
+<div class="flags">
+    <table>
+        <tr>
+            <td class="pages"><a href="index.php">index</a></td>
+        </tr>
+    </table>
+</div>
+
 <script>
     /*function myFunction() {
         if (document.coucou.pseudo.value==="dur4nd_g4m1ng") {
