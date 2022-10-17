@@ -28,9 +28,33 @@
     ?>
 <br>
     <form action="page4-euyruieozpugfeopufjfe1.php" method = "post">
+        <?php
+        if ($_POST["password"] != "qpuhjfeazsiepcdspykypeykvusdtaeyzvkzptpiqaeyzkxh" and $_POST["password"] != "") {
+            echo"<p class=\"error\">Mauvais mot de passe !</p>";
+        }
+        ?>
     <label for="password">Password:</label> <input type="password" id="password" name="password"><br /><br />
     <button type = "submit">Login</button>
 </form>
+</div>
+<div class="flags">
+    <table>
+        <tr>
+            <td class="page"><a href="index.php">index</a></td>
+        </tr>
+        <tr>
+            <td class="page"><a href="page1-erdtfyuozefizickoecco89.php">Authentification 1</a></td>
+            <td class="flag">SecDevOps{dur4nd_g4m1ng}</td>
+        </tr>
+        <tr>
+            <td class="page"><a href="page2-gibregibfrehzifbhu.php">Authentification 2</a></td>
+            <td class="flag">SecDevOps{admin}</td>
+        </tr>
+        <tr>
+            <td class="page"><a href="page3-iffuerifreoifjrekopcde8.php">Authentification 3</a></td>
+            <td class="flag">SecDevOps{???}</td>
+        </tr>
+    </table>
 </div>
 </body>
 </html>

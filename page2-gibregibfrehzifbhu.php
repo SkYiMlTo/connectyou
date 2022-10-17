@@ -15,9 +15,26 @@
     </div>
 
     <form action="page2-gibregibfrehzifbhu.php" method = "post">
+        <?php
+        if ($_POST["password"] != "admin" and $_POST["password"] != "") {
+            echo"<p class=\"error\">Mauvais mot de passe !</p>";
+        }
+        ?>
         <label for="password">Mot de passe:</label> <input type="text" id="password" name="password"><br /><br />
         <button type = "submit">Se connecter</button>
     </form>
+</div>
+
+<div class="flags">
+    <table>
+        <tr>
+            <td class="page"><a href="index.php">index</a></td>
+        </tr>
+        <tr>
+            <td class="page"><a href="page1-erdtfyuozefizickoecco89.php">Authentification 1</a></td>
+            <td class="flag">SecDevOps{dur4nd_g4m1ng}</td>
+        </tr>
+    </table>
 </div>
 </body>
 </html>
