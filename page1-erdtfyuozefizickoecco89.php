@@ -13,11 +13,10 @@
         <p class="robot">Rien de très sorcier... il faut jsute se connecter...</p>
         <br>
     </div>
-    <form name="coucou">
-        <label for="password">Mot de passe:</label> <input type="text" id="password" name="password"><br /><br />
+    <form name="coucou" method="post">
+        <label for="password">Mot de passe:</label> <input type="password" id="password" name="password"><br /><br />
         <button type = "submit">Se connecter</button>
     </form>
-<button onclick="myFunction()">Se connecter</button>
 </div>
 
 <script>
@@ -26,7 +25,9 @@
             location.replace("page2-gibregibfrehzifbhu.php");
         }
     }*/
-    window.some_variable = ;
+    console.log("test")
+    console.log('<?=$_POST['password']?>');
+    console.log("test")
     if ('<?=$_POST['password']?>'==="dur4nd_g4m1ng") {
         location.replace("page2-gibregibfrehzifbhu.php");
     }
