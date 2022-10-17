@@ -7,9 +7,11 @@
 <body>
 
 <div id="content">
-<h1>Hello back my dear Admin !</h1>
 
-<p>Please insert your password <a href="page1-erdtfyuozefizickoecco89.php">here</a>.</p>
+<h1>Salutation mon cher Admin !</h1>
+    <div class="dialog">
+        <img class="robot" src="small-robot.png"/>
+<p class="robot">Entre ton mot de passe <a href="page1-erdtfyuozefizickoecco89.php">ici</a>.</p>
 </div>
 </body>
 </html>

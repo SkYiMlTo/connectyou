@@ -1,5 +1,9 @@
 <!DOCTYPE html>
 <html>
+<head>
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin">
+    <link href="style.css" rel="stylesheet">
+</head>
 <body>
 
 <h1>Hello back my dear Admin !</h1>
