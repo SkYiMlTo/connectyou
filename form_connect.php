@@ -25,6 +25,17 @@
     <form action="controller.php?func=loginUser" method = "post">
         <label for="username">Login:</label> <input type="text" id="username" name="username"><br /><br />
         <label for="password">Mot de passe:</label> <input type="text" id="password" name="password"><br /><br />
+        <?php
+        if ($_GET["error"] == "true") {
+            echo "Mauvais mail/pw <br /><br />";
+        }
+        if ($_GET["tentativedecasse"] == "true") {
+            echo "Mais pourquoi tu veux toujours tout casser ?<br /><br />";
+        }
+        if ($_GET["interessant"] == "true") {
+            echo "Ca c'est interessant, je crois qu'on truc a changé...<br /><br />";
+        }
+        ?>
         <button type = "submit">Se connecter</button>
     </form>
 </div>
@@ -35,6 +46,15 @@
 
 if ($_POST["password"] == "admin") {
     header("Location: page3-iffuerifreoifjrekopcde8.php");
+}
+
+if ($_GET["flag"] == "displayed") {
+    echo "
+    <script>
+    console.log('gg, tu as réussi tu peux valider la page en entrant : TW9uU3VwZXJNb3REZVBhc3NlRGVzRW5mZXJzNDU2');
+    console.log('Enfin presque lmao, gl hf');
+    </script>
+    ";
 }
 
 ?>
