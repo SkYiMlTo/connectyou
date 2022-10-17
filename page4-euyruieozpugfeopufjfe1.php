@@ -17,7 +17,7 @@
 <?php
 
 if ($_POST["password"] == "azertpokjcsozmncziuizoiufecndkoijfujzdzsakoijuhr") {
-    echo "<script>alert(\"Aaaah presque !\")</script>";
+    echo "<script>alert(\"On parle pas la bonne langue là !\")</script>";
 }
 
 else if ($_POST["password"] == "kjobdzyutmcyjwxmjsesjysepomxnuystpetjnjckuysterb") {
