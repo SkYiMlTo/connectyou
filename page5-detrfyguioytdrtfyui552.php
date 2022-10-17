@@ -6,18 +6,25 @@
 
 <form action="page5-detrfyguioytdrtfyui552.php" method="post">
     <textarea name="message" rows="5" cols="80"></textarea>
-    <input type="submit">
+    <input type="submit" name="bouton">
 </form>
 
-<button>Rafraîchir le bot</button>
 </body>
 </html>
 
 <?php
+
+    $button = $_POST["bouton"];
+
     $message = $_POST["message"];
 
+    if ($button) {
+        session_start();
+        setcookie("ADMIN_COOKIE", "Gr4n0la");
+    }
 
 
-    setcookie("ADMIN_COOKIE", "Gr4n0la");
+    $message = $_POST["message"];
+
 
 ?>
