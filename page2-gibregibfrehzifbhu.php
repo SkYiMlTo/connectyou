@@ -15,6 +15,11 @@
     </div>
 
     <form action="page2-gibregibfrehzifbhu.php" method = "post">
+        <?php
+        if ($_POST["password"] != "admin" and $_POST["password"] != "") {
+            echo"<p class=\"error\">Mauvais mot de passe !</p>";
+        }
+        ?>
         <label for="password">Mot de passe:</label> <input type="text" id="password" name="password"><br /><br />
         <button type = "submit">Se connecter</button>
     </form>
