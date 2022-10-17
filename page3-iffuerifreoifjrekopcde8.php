@@ -14,12 +14,28 @@
     </div>
 <br>
     <form action="page3-iffuerifreoifjrekopcde8.php method = "post">
-    <?php
-    if ($_POST["password"] != "MonSuperMotDePasseDesEnfers456" and $_POST["password"] != "") {
-        echo"<p class=\"error\">Mauvais mot de passe !</p>";
-    }
-    ?>
+
         <label for="password">Mot de passe:</label> <input type="text" id="password" name="password"><br /><br />
+        <button type = "submit">Se connecter</button>
+    </form>
+
+    <form action="controller.php?func=loginUser" method = "post">
+        <?php
+        if ($_POST["password"] != "MonSuperMotDePasseDesEnfers456" and $_POST["password"] != "") {
+            echo"<p class=\"error\">Mauvais mot de passe !</p>";
+        }
+        ?>
+        <?php
+        if ($_GET["tentativedecasse"] == "true") {
+            echo "<p class=\"error\">Mais pourquoi tu veux toujours tout casser ?</p>";
+        }
+        if ($_GET["interessant"] == "true") {
+            echo "<p class=\"error\">Ca c'est interessant, je crois qu'on truc a changé...</p>";
+        }
+        ?>
+        <label for="username">Login:</label> <input type="text" id="username" name="username"><br /><br />
+        <label for="password">Mot de passe:</label> <input type="text" id="password" name="password"><br /><br />
+
         <button type = "submit">Se connecter</button>
     </form>
 </div>
@@ -40,3 +56,20 @@
 </div>
 </body>
 </html>
+
+<?php
+
+if ($_POST["password"] == "admin") {
+    header("Location: page3-iffuerifreoifjrekopcde8.php");
+}
+
+if ($_GET["flag"] == "displayed") {
+    echo "
+    <script>
+    console.log('gg, tu as réussi, le mot de passe admin est : TW9uU3VwZXJNb3REZVBhc3NlRGVzRW5mZXJzNDU2');
+    console.log('Enfin presque lmao, gl hf');
+    </script>
+    ";
+}
+
+?>
