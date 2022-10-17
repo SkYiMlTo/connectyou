@@ -1,17 +1,22 @@
+<!DOCTYPE html>
 <html>
-<script>
-function Connexion() {
-    if (document.login.pass.value === "dur4nd_g4m1ng") {
-        alert("bien joué");
-    }
-}
-</script>
-<h3>Connectez-vous</h3>
-<form name="login">
-<input type="text" name="pass">
-<input type="submit" onclick="Connexion()">
+<body>
+
+<form name="coucou">
+    <input type="text" name="pseudo">
 </form>
+<button onclick="myFunction()">Connexion</button>
 
+
+<script>
+    function myFunction() {
+        if (document.coucou.pseudo.value==="dur4nd_g4m1ng") {
+            location.replace("page2-gibregibfrehzifbhu.php");
+
+        }
+
+    }
+</script>
+
+</body>
 </html>
-
-<?php
