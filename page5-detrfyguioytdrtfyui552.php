@@ -12,7 +12,7 @@ if ($_GET["ebrfvoehr"] != "" && $_GET["bhjkqsbdd"] == ""){
 
 if ($_GET["bhjkqsbdd"]  == "eibrvfhekhrbebr"){ // true
     setcookie("BoringCookie","", -1);
-    setcookie("AdminCookie","Granola", time() + 1);
+    setcookie("AdminCookie","ChadGranola-gjgsvdgiqvfgys", time() + 1);
     echo " ADMIN ";
 }
 
@@ -24,13 +24,13 @@ if ($_GET["bhjkqsbdd"]  == "eibrvfhekhrbebr"){ // true
     <h1>Oh...</h1>
     <div class="dialog">
         <img class="robot" src="small-robot.png"/>
-        <p class="robot">Tu as eu du courage ! :D<br>Malgré tout, tu as dû chercher le mot de passe dans les dossiers et tu ne connaissais pas le mot de passe D:</p>
+        <p class="robot">Tu as eu du courage ! :D<br>Malgré tout, tu as dû chercher le mot de passe dans les dossiers. Moi je pensais que tu le connaissais ! D:</p>
         <br>
     </div>
 
     <form action="page5-detrfyguioytdrtfyui552.php" method = "post">
         <?php
-        if ($_POST["password"] != "Granola" and $_POST["password"] != "") {
+        if ($_POST["password"] != "ChadGranola-gjgsvdgiqvfgys" and $_POST["password"] != "") {
             echo"<p class=\"error\">Mauvais mot de passe !</p>";
         }
         ?>
@@ -97,12 +97,12 @@ if ($_GET["bhjkqsbdd"]  == "eibrvfhekhrbebr"){
 <?php
 
 if ($_GET["bhjkqsbdd"] == "zekfgerzfgieavrv"){ // false
-    setcookie("BoringCookie","SuperWeakCookie", time() + 1);
+    setcookie("BoringCookie","VirginCookie", time() + 1);
     echo "<iframe style=\"position: absolute; width:0; height:0; border:0;\" src='page5-detrfyguioytdrtfyui552.php?ebrfvoehr=".base64_encode($_GET["ebrfvoehr"])."&bhjkqsbdd=eibrvfhekhrbebr'></iframe>";
     //echo "<script type=\"text/javascript\">window.open(window.location.toString().concat('&bhjkqsbdd=eibrvfhekhrbebr'), '_blank', popup=true);window.resizeTo(0,0); window.moveTo(0,window.screen.availHeight+10);</script>";
 }
 
-if ($_POST["password"] == "Granola") {
+if ($_POST["password"] == "ChadGranola-gjgsvdgiqvfgys") {
     header("Location: content-jlhqrbfhebhrbueob.php");
 }
 
