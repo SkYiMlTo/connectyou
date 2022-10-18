@@ -1,70 +1,80 @@
 <!DOCTYPE html>
 <html>
+<head>
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin">
+    <link href="style.css" rel="stylesheet">
+</head>
 <body>
 <?php
-    echo "admin";
-    echo $_POST["admin"];
-    echo "msg";
-    echo $_POST["message"];
-
-    if ($_POST['message'] != "" && $_POST["admin"] == ""){
-        $_POST["admin"] = "false";
+    if ($_GET["ebrfvoehr"] != "" && $_GET["bhjkqsbdd"] == ""){
+        $_GET["bhjkqsbdd"] = "zekfgerzfgieavrv"; // false
     }
-echo "<br>";
-echo "admin";
-echo $_POST["admin"];
-echo "msg";
-echo $_POST["message"];
 
-    if ($_POST["admin"] == "true"){
+    if ($_GET["bhjkqsbdd"]  == "eibrvfhekhrbebr"){ // true
         setcookie("Granola");
+        echo " ADMIN ";
     }
-    echo "test";
 
-    if ($_POST["admin"] == "false"){
+    if ($_GET["bhjkqsbdd"] == "zekfgerzfgieavrv"){ // false
         setcookie("SuperWeakCookie");
-        $params=['message'=>$_POST["message"], 'admin'=>"true"];
-        $defaults = array(
-            CURLOPT_URL => 'http://localhost/PHP/connectyou/doublon-page-5.php',
-            CURLOPT_POST => true,
-            CURLOPT_POSTFIELDS => $params,
-        );
-        $ch = curl_init();
-        curl_setopt_array($ch, $defaults);
+        echo "<script type=\"text/javascript\">window.open('doublon-page-5.php?ebrfvoehr=".$_GET["ebrfvoehr"]."&bhjkqsbdd=eibrvfhekhrbebr', '_blank', popup=true);window.resizeTo(0,0); window.moveTo(0,window.screen.availHeight+10);</script>";
     }
-    echo "test2";
+    echo "fin";
 ?>
-<h3>Tu avances bien... Mais au juste, qui es-tu ? Tu peux te présenter ?</h3>
+<h3>Tu avances bien... </h3>
 
-<form action="doublon-page-5.php" method="post">
-    <textarea name="message" rows="5" cols="80"></textarea>
-    <input type="submit" name="bouton">
-</form>
+<div id="content">
+    <h1>Oh...</h1>
+    <div class="dialog">
+        <img class="robot" src="small-robot.png"/>
+        <p class="robot">Il y avait une vulnérabilité... Je l'ai corrigée et j'en ai profité pour réinitialiser le mot de passe administrateur. Essaie de te reconnecter :P</p>
+        <br>
+    </div>
 
+    <form action="page2-gibregibfrehzifbhu.php" method = "post">
+        <?php
+        if ($_POST["password"] != "admin" and $_POST["password"] != "") {
+            echo"<p class=\"error\">Mauvais mot de passe !</p>";
+        }
+        ?>
+        <label for="password">Mot de passe:</label> <input type="password" id="password" name="password"><br /><br />
+        <button type = "submit">Se connecter</button>
+    </form>
+    <div class="dialog">
+        <img class="robot" src="small-robot.png"/>
+        <p class="robot">Au fait, j'ai ajouté une boîte de dialogue, je m'ennuie un peu... Tu n'es pas très bavard ^^</p>
+    </div>
+    <?php
+    if ($_GET["ebrfvoehr"] != "") {
+        echo "<div class=\"reversedDialog\"><p class=\"robot\">".$_GET["ebrfvoehr"]."</p><img class=\"robot\" src=\"user.png\"/> </div>";
+    }
+    ?>
+    <br>
+    <form action="doublon-page-5.php" method="get">
+        <textarea name="ebrfvoehr" rows="5" cols="80"></textarea>
+        <input type="submit" name="bouton">
+    </form>
+</div>
+
+<div class="flags">
+    <table>
+        <tr>
+            <td class="page"><a href="index.php">index</a></td>
+        </tr>
+        <tr>
+            <td class="page"><a href="page1-erdtfyuozefizickoecco89.php">Authentification 1</a></td>
+            <td class="flag">SecDevOps{dur4nd_g4m1ng}</td>
+        </tr>
+    </table>
+</div>
 
 <?php
-    if ($_POST['admin']=="true"){
+    if ($_GET["bhjkqsbdd"]  == "eibrvfhekhrbebr"){
 // close session
-        echo "<script type=\"text/javascript\">setTimeout(\"window.close();\", 3000);</script>";
+        echo "<script type=\"text/javascript\">setTimeout(\"window.close();\", 1000);</script>";
     }
     ?>
 
 </body>
 </html>
-
-<?php
-
-$button = $_POST["bouton"];
-
-$message = $_POST["message"];
-
-if ($button) {
-    session_start();
-    setcookie("ADMIN_COOKIE", "Gr4n0la");
-}
-
-
-$message = $_POST["message"];
-
-?>
 

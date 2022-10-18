@@ -35,8 +35,10 @@ summary{
 .dialog{
     display: flex;
     background-color: #585B56;
-
-
+}
+.reversedDialog{
+    display: flex;
+    background-color: #585B56;
 }
 img.robot{
     margin-top: 5em;
@@ -54,6 +56,13 @@ p.robot{
     border: 3px solid #0F0326;
     background-color: #F5F7DC;
 }
+
+img.human{
+    margin-top: 5em;
+    width:5em;
+    height: 5em;
+}
+
 .flags{
     background-color: #3C3B3D;
     width : 40%;
