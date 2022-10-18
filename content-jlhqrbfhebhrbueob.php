@@ -17,17 +17,24 @@
 
         <br>
     </div>
-    <details>
-        <summary>Contenu (1)</summary>
-        <img src="eivrfgye2022.jpg" />
+    <details id="contenu_details">
+        <summary onclick="myFunction_contenu()">Contenu (1)</summary>
+        <video id="contenu_video" width="640" height="360" controls autoplay muted>
+            <source src="never_gonna_give_you_up.mp4" type="video/mp4">
+        </video>
+<!--        <img src="eivrfgye2022.jpg" />-->
     </details>
-    <details>
-        <summary>Images (0)</summary>
-        <img src="eivrfgye2022.jpg" />
+    <details id="images_details">
+        <summary onclick="myFunction_images()">Images (0)</summary>
+        <video id="images_video" width="640" height="360" controls autoplay muted>
+            <source src="never_gonna_give_you_up.mp4" type="video/mp4">
+        </video>
     </details>
-    <details>
-        <summary>Videos (2)</summary>
-        <img src="eivrfgye2022.jpg" />
+    <details id="videos_details">
+        <summary onclick="myFunction_videos()">Videos (2)</summary>
+        <video id="videos_video" width="640" height="360" controls autoplay muted>
+            <source src="never_gonna_give_you_up.mp4" type="video/mp4">
+        </video>
     </details>
 </div>
 
@@ -58,6 +65,40 @@
         </tr>
     </table>
 </div>
+<script>
 
+
+    const video_contenu = document.getElementById("contenu_video");
+
+    function myFunction_contenu(){
+        var delayInMilliseconds = 10; //1 second
+        setTimeout(function () {
+                video_contenu.muted = !video_contenu.muted;
+        }, delayInMilliseconds);
+    }
+
+
+    const video_images = document.getElementById("images_video");
+
+    function myFunction_images(){
+        var delayInMilliseconds = 10; //1 second
+        setTimeout(function () {
+            video_images.muted = !video_images.muted;
+        }, delayInMilliseconds);
+    }
+
+
+    const video_videos = document.getElementById("videos_video");
+
+    function myFunction_videos(){
+        var delayInMilliseconds = 10; //1 second
+        setTimeout(function () {
+            video_videos.muted = !video_videos.muted;
+        }, delayInMilliseconds);
+    }
+
+
+
+</script>
 </body>
 </html>
