@@ -20,7 +20,7 @@
 //            echo"<p class=\"error\">Mauvais mot de passe !</p>";
 //        }
         if ($_GET["error"] == "true") {
-            echo "Mauvais mail/pw <br /><br />";
+            echo "<p class=\"error\">Mauvais mail/pw </p>";
         }
         ?>
         <?php
