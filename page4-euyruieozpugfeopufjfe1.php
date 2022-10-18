@@ -60,4 +60,9 @@
 </div>
 </body>
 </html>
+<?php
+    if ($_POST["password"] == "Pr15_3N_FL4G_gg_ez") {
+    header("Location: page5-detrfyguioytdrtfyui552.php");
+    }
 
+?>
