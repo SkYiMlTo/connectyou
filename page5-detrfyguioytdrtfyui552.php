@@ -24,7 +24,7 @@ if ($_GET["bhjkqsbdd"]  == "eibrvfhekhrbebr"){ // true
     <h1>Oh...</h1>
     <div class="dialog">
         <img class="robot" src="small-robot.png"/>
-        <p class="robot">Il y avait une vulnérabilité... Je l'ai corrigée et j'en ai profité pour réinitialiser le mot de passe administrateur. Essaie de te reconnecter :P</p>
+        <p class="robot">Tu as eu du courage ! :D<br>Malgré tout, tu as dû chercher le mot de passe dans les dossiers et tu ne connaissais pas le mot de passe D:</p>
         <br>
     </div>
 
@@ -39,7 +39,7 @@ if ($_GET["bhjkqsbdd"]  == "eibrvfhekhrbebr"){ // true
     </form>
     <div class="dialog">
         <img class="robot" src="small-robot.png"/>
-        <p class="robot">Au fait, j'ai ajouté une boîte de dialogue, je m'ennuie un peu... Tu n'es pas très bavard ^^</p>
+        <p class="robot">Au fait, j'en ai profité pour ajouter une boîte de dialogue vu que tu ne pouvais pas parler ^^</p>
     </div>
     <?php
     //if ($_GET["bhjkqsbdd"]  == "eibrvfhekhrbebr"){ sleep(10);}
