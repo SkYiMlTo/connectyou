@@ -74,6 +74,9 @@ img.human{
 .error{
     color:#FFB2B1;
 }
+.discussionAvecLeBot{
+    width : 90%;
+}
 
 @font-face {
     font-family: Minecraftia;

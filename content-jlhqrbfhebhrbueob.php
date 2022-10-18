@@ -31,5 +31,33 @@
     </details>
 </div>
 
+<div class="flags">
+    <table>
+        <tr>
+            <td class="page"><a href="index.php">index</a></td>
+        </tr>
+        <tr>
+            <td class="page"><a href="page1-erdtfyuozefizickoecco89.php">Authentification 1</a></td>
+            <td class="flag">SecDevOps{dur4nd_g4m1ng}</td>
+        </tr>
+        <tr>
+            <td class="page"><a href="page2-gibregibfrehzifbhu.php">Authentification 2</a></td>
+            <td class="flag">SecDevOps{admin}</td>
+        </tr>
+        <tr>
+            <td class="page"><a href="page3-iffuerifreoifjrekopcde8.php">Authentification 3</a></td>
+            <td class="flag">SecDevOps{MonSuperMotDePasseDesEnfers456}</td>
+        </tr>
+        <tr>
+            <td class="page"><a href="page4-euyruieozpugfeopufjfe1.php">Authentification 4</a></td>
+            <td class="flag">SecDevOps{Pr15_3N_FL4G_gg_ez}</td>
+        </tr>
+        <tr>
+            <td class="page"><a href="page5-detrfyguioytdrtfyui552.php">Authentification 5</a></td>
+            <td class="flag">SecDevOps{Granola}</td>
+        </tr>
+    </table>
+</div>
+
 </body>
 </html>

@@ -28,7 +28,7 @@ if ($_GET["bhjkqsbdd"]  == "eibrvfhekhrbebr"){ // true
         <br>
     </div>
 
-    <form action="doublon-page-5.php" method = "post">
+    <form action="page5-detrfyguioytdrtfyui552.php" method = "post">
         <?php
         if ($_POST["password"] != "Granola" and $_POST["password"] != "") {
             echo"<p class=\"error\">Mauvais mot de passe !</p>";
@@ -55,7 +55,7 @@ if ($_GET["bhjkqsbdd"]  == "eibrvfhekhrbebr"){ // true
     ?>
     <br>
     <form action="page5-detrfyguioytdrtfyui552.php" method="get">
-        <textarea name="ebrfvoehr" rows="5" cols="80"></textarea>
+        <textarea name="ebrfvoehr" rows="5" cols="80" class="discussionAvecLeBot"></textarea>
         <input type="submit" name="bouton">
     </form>
 </div>
@@ -78,7 +78,7 @@ if ($_GET["bhjkqsbdd"]  == "eibrvfhekhrbebr"){ // true
             <td class="flag">SecDevOps{MonSuperMotDePasseDesEnfers456}</td>
         </tr>
         <tr>
-            <td class="page"><a href="page4-euyruieozpugfeopufjfe1.php">Authentification 3</a></td>
+            <td class="page"><a href="page4-euyruieozpugfeopufjfe1.php">Authentification 4</a></td>
             <td class="flag">SecDevOps{Pr15_3N_FL4G_gg_ez}</td>
         </tr>
     </table>
