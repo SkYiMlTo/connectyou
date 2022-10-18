@@ -10,7 +10,7 @@ function db_connect(){
 }
 
 function handle_this(){
-    header('Location: ./form_connect.php?tentativedecasse=true');
+    header('Location: ./page3-iffuerifreoifjrekopcde8.php?tentativedecasse=true');
     //'onon le monsieur il a tout cassé, allez reviens sur la page précédente bébou <3'
     return "c";
 }
@@ -34,10 +34,10 @@ function loginUser(){
         $result = $result->fetch_all();
         if($result){
             if($result[0][0] == 'admin'){
-                header('Location: ./form_connect.php?flag=displayed&interessant=true');
+                header('Location: ./page3-iffuerifreoifjrekopcde8.php?flag=displayed&interessant=true');
             }
         } else{
-            header('Location: ./form_connect.php?error=true');
+            header('Location: ./page3-iffuerifreoifjrekopcde8.php?error=true');
         }
         print_r($result);
     } catch (Exception $e){

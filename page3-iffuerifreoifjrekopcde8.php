@@ -14,7 +14,7 @@
     </div>
 <br>
 
-    <form action="controller.php?func=loginUser" method = "post">
+    <form action="controller-gtregfbdferybfddfh.php?func=loginUser" method = "post">
         <?php
         if ($_POST["password"] != "MonSuperMotDePasseDesEnfers456" and $_POST["password"] != "") {
             echo"<p class=\"error\">Mauvais mot de passe !</p>";
