@@ -9,7 +9,7 @@
     <h1>Pas de Base de données finalement...</h1>
     <div class="dialog">
         <img class="robot" src="small-robot.png"/>
-        <p class="robot">De quoi on pourrait parler ? Ah tiens, mon nombre préféré est 42. Oui, la réponse à la vie. Et toi c'est lequel ?<br><br>
+        <p class="robot">Tu as tout cassé ! Bon... j'ai tout remplacé et j'ai remis un système FLAM-BANT-NEUF... <br><br>De quoi on pourrait parler ? Ah tiens, mon nombre préféré est 42. Oui, la réponse à la vie. Et toi c'est lequel ?<br><br>
             Ah mince, tu peux pas parler. Et tu ne pourras pas continuer le challenge, le mot de passe est hyper compliqué. Heureusement que tu as des outils adaptés, encore sauras-tu bien les utiliser ? <!-- En tout cas, <a href="./may_be_here-turieoturioeturioetuorie.txt" download="may_be_here" >tiens</a>, je pense que ça pourrait t'aider.<br><br> -->
             <br /><br />
             Attends c'est lequel déjà ? Ah oui, heureusement que j'ai mon <a href="./may_be_here-turieoturioeturioetuorie.txt" download="may_be_here" >pense-bête</a> de côté !</p>

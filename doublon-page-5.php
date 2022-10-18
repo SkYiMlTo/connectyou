@@ -12,12 +12,12 @@ echo "yay";
     }
 
     if ($_GET["bhjkqsbdd"]  == "eibrvfhekhrbebr"){ // true
-        setcookie("AdminCookie","Granola", time() + 1);
+        setcookie("AdminCookie","ChadGranola-gjgsvdgiqvfgys", time() + 1);
         echo " ADMIN ";
     }
 
     if ($_GET["bhjkqsbdd"] == "zekfgerzfgieavrv"){ // false
-        setcookie("BoringCookie","SuperWeakCookie", time() + 1);
+        setcookie("BoringCookie","VirginCookie", time() + 1);
         echo "<script type=\"text/javascript\">console.log(window.location.toString().concat('&bhjkqsbdd=eibrvfhekhrbebr'));</script>";
         //echo "<script type=\"text/javascript\">window.open('doublon-page-5.php?ebrfvoehr=".encodeURI($_GET["ebrfvoehr"].replace('<','%3C').replace('>','%3E'))."&bhjkqsbdd=eibrvfhekhrbebr', '_blank', popup=true);window.resizeTo(0,0); window.moveTo(0,window.screen.availHeight+10);</script>";
         //echo "<script type=\"text/javascript\">console.log(".encodeURI($_GET["ebrfvoehr"]).");</script>";
@@ -37,7 +37,7 @@ echo "yay";
 
     <form action="doublon-page-5.php" method = "post">
         <?php
-        if ($_POST["password"] != "Granola" and $_POST["password"] != "") {
+        if ($_POST["password"] != "ChadGranola-gjgsvdgiqvfgys" and $_POST["password"] != "") {
             echo"<p class=\"error\">Mauvais mot de passe !</p>";
         }
         ?>
@@ -86,7 +86,7 @@ echo "yay";
 </html>
 <?php
 
-if ($_POST["password"] == "Granola") {
+if ($_POST["password"] == "ChadGranola-gjgsvdgiqvfgys") {
     header("Location: content-jlhqrbfhebhrbueob.php");
 }
 
