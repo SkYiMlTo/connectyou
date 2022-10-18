@@ -16,8 +16,11 @@
 
     <form action="controller-gtregfbdferybfddfh.php?func=loginUser" method = "post">
         <?php
-        if ($_POST["password"] != "MonSuperMotDePasseDesEnfers456" and $_POST["password"] != "") {
-            echo"<p class=\"error\">Mauvais mot de passe !</p>";
+//        if ($_POST["password"] != "MonSuperMotDePasseDesEnfers456" and $_POST["password"] != "") {
+//            echo"<p class=\"error\">Mauvais mot de passe !</p>";
+//        }
+        if ($_GET["error"] == "true") {
+            echo "Mauvais mail/pw <br /><br />";
         }
         ?>
         <?php
