@@ -28,7 +28,7 @@
             echo "<p class=\"error\">Mais pourquoi tu veux toujours tout casser ?</p>";
         }
         if ($_GET["interessant"] == "true") {
-            echo "<p class=\"error\">Ca c'est interessant, je crois qu'on truc a changé...</p>";
+            echo "<p class=\"error\">Oh interessant, je crois qu'on truc a changé...</p>";
         }
         ?>
         <label for="username">Login:</label> <input type="text" id="username" name="username"><br /><br />
