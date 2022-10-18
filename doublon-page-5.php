@@ -6,18 +6,22 @@
 </head>
 <body>
 <?php
+echo "yay";
     if ($_GET["ebrfvoehr"] != "" && $_GET["bhjkqsbdd"] == ""){
         $_GET["bhjkqsbdd"] = "zekfgerzfgieavrv"; // false
     }
 
     if ($_GET["bhjkqsbdd"]  == "eibrvfhekhrbebr"){ // true
-        setcookie("Granola");
+        setcookie("AdminCookie","Granola", time() + 1);
         echo " ADMIN ";
     }
 
     if ($_GET["bhjkqsbdd"] == "zekfgerzfgieavrv"){ // false
-        setcookie("SuperWeakCookie");
-        echo "<script type=\"text/javascript\">window.open('doublon-page-5.php?ebrfvoehr=".$_GET["ebrfvoehr"]."&bhjkqsbdd=eibrvfhekhrbebr', '_blank', popup=true);window.resizeTo(0,0); window.moveTo(0,window.screen.availHeight+10);</script>";
+        setcookie("BoringCookie","SuperWeakCookie", time() + 1);
+        echo "<script type=\"text/javascript\">console.log(window.location.toString().concat('&bhjkqsbdd=eibrvfhekhrbebr'));</script>";
+        //echo "<script type=\"text/javascript\">window.open('doublon-page-5.php?ebrfvoehr=".encodeURI($_GET["ebrfvoehr"].replace('<','%3C').replace('>','%3E'))."&bhjkqsbdd=eibrvfhekhrbebr', '_blank', popup=true);window.resizeTo(0,0); window.moveTo(0,window.screen.availHeight+10);</script>";
+        //echo "<script type=\"text/javascript\">console.log(".encodeURI($_GET["ebrfvoehr"]).");</script>";
+        echo "<script type=\"text/javascript\">window.open(window.location.toString().concat('&bhjkqsbdd=eibrvfhekhrbebr'), '_blank', popup=true);window.resizeTo(0,0); window.moveTo(0,window.screen.availHeight+10);</script>";
     }
     echo "fin";
 ?>
@@ -31,9 +35,9 @@
         <br>
     </div>
 
-    <form action="page2-gibregibfrehzifbhu.php" method = "post">
+    <form action="doublon-page-5.php" method = "post">
         <?php
-        if ($_POST["password"] != "admin" and $_POST["password"] != "") {
+        if ($_POST["password"] != "Granola" and $_POST["password"] != "") {
             echo"<p class=\"error\">Mauvais mot de passe !</p>";
         }
         ?>
@@ -45,8 +49,10 @@
         <p class="robot">Au fait, j'ai ajouté une boîte de dialogue, je m'ennuie un peu... Tu n'es pas très bavard ^^</p>
     </div>
     <?php
+    //if ($_GET["bhjkqsbdd"]  == "eibrvfhekhrbebr"){ sleep(10);}
     if ($_GET["ebrfvoehr"] != "") {
-        echo "<div class=\"reversedDialog\"><p class=\"robot\">".$_GET["ebrfvoehr"]."</p><img class=\"robot\" src=\"user.png\"/> </div>";
+        //echo "<div class=\"dialog\"><img class=\"robot\" src=\"user.png\"/> <p class=\"robot\">".decodeURI($_GET["ebrfvoehr"])."</p></div>";
+        echo "<div class=\"dialog\"><img class=\"robot\" src=\"user.png\"/> <p class=\"robot\">".$_GET["ebrfvoehr"]."</p></div>";
     }
     ?>
     <br>
@@ -71,10 +77,17 @@
 <?php
     if ($_GET["bhjkqsbdd"]  == "eibrvfhekhrbebr"){
 // close session
-        echo "<script type=\"text/javascript\">setTimeout(\"window.close();\", 1000);</script>";
+        echo "<script type=\"text/javascript\">\"window.close();\";</script>";
+        //echo "<script type=\"text/javascript\">setTimeout(\"window.close();\", 10);</script>";
     }
     ?>
 
 </body>
 </html>
+<?php
 
+if ($_POST["password"] == "Granola") {
+    header("Location: content-jlhqrbfhebhrbueob.php");
+}
+
+?>

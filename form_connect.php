@@ -5,7 +5,6 @@
     <link href="style.css" rel="stylesheet">
 </head>
 <body>
-
 <div id="content">
     <h1>N'allons pas trop vite...</h1>
     <div class="dialog">

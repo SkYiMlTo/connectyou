@@ -5,7 +5,9 @@
 </head>
 <html>
 <body>
-
+<div id="logout">
+    <p><a href="index.php">Déconnexion</a></p>
+</div>
 <div id="content">
 
     <h1>Salutation mon cher <i>admin</i> !</h1>
