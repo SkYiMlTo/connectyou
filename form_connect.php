@@ -21,7 +21,7 @@
     </div>
     <br />
 
-    <form action="controller.php?func=loginUser" method = "post">
+    <form action="controller-gtregfbdferybfddfh.php?func=loginUser" method = "post">
         <label for="username">Login:</label> <input type="text" id="username" name="username"><br /><br />
         <label for="password">Mot de passe:</label> <input type="text" id="password" name="password"><br /><br />
         <?php
