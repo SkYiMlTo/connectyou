@@ -16,8 +16,11 @@
 
     <form action="controller-gtregfbdferybfddfh.php?func=loginUser" method = "post">
         <?php
-        if ($_POST["password"] != "MonSuperMotDePasseDesEnfers456" and $_POST["password"] != "") {
-            echo"<p class=\"error\">Mauvais mot de passe !</p>";
+//        if ($_POST["password"] != "MonSuperMotDePasseDesEnfers456" and $_POST["password"] != "") {
+//            echo"<p class=\"error\">Mauvais mot de passe !</p>";
+//        }
+        if ($_GET["error"] == "true") {
+            echo "<p class=\"error\">Mauvais mail/pw </p>";
         }
         ?>
         <?php
@@ -25,7 +28,7 @@
             echo "<p class=\"error\">Mais pourquoi tu veux toujours tout casser ?</p>";
         }
         if ($_GET["interessant"] == "true") {
-            echo "<p class=\"error\">Ca c'est interessant, je crois qu'on truc a changé...</p>";
+            echo "<p class=\"error\">Oh interessant, je crois qu'on truc a changé...</p>";
         }
         ?>
         <label for="username">Login:</label> <input type="text" id="username" name="username"><br /><br />
