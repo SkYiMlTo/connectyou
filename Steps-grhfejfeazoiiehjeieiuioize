@@ -1,18 +1,20 @@
 
 First auth :
     Hardcoded password
+    SecDevOps{dur4nd_g4m1ng}
 
 Second auth :
     Common password
+    SecDevOps{admin}
 
 Third auth :
     SQLI
+    SecDevOps{MonSuperMotDePasseDesEnfers456}
 
 Fourth auth :
     Hidden file in hidden folder
+    SecDevOps{Pr15_3N_FL4G_gg_ez}
 
 Fifth auth :
     XSS to get admin code
-
-Sixth auth :
-    etc/passwd
+    SecDevOps{ChadGranola-gjgsvdgiqvfgys}
