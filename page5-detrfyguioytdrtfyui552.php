@@ -18,17 +18,16 @@ if ($_GET["bhjkqsbdd"]  == "eibrvfhekhrbebr"){ // true
 
 
 ?>
-<h3>Tu avances bien... </h3>
 
 <div id="content">
-    <h1>Oh...</h1>
+    <h1>Tu avances bien... </h1>
     <div class="dialog">
         <img class="robot" src="small-robot.png"/>
         <p class="robot">Tu as eu du courage ! :D<br>Malgré tout, tu as dû chercher le mot de passe dans les dossiers. Moi je pensais que tu le connaissais ! D:</p>
         <br>
     </div>
 
-    <form action="page5-detrfyguioytdrtfyui552.php" method = "post">
+    <form action="page5-detrfyguioytdrtfyui552.php" method = "post"><!-- password == admin cookie -->
         <?php
         if ($_POST["password"] != "ChadGranola-gjgsvdgiqvfgys" and $_POST["password"] != "") {
             echo"<p class=\"error\">Mauvais mot de passe !</p>";

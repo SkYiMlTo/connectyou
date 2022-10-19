@@ -77,7 +77,10 @@ img.human{
 .discussionAvecLeBot{
     width : 90%;
 }
-.logout{
+a:visited#logout{
+    color:#F5F7DC;
+}
+a:link#logout{
     color:#F5F7DC;
 }
 
