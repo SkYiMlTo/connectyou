@@ -16,8 +16,10 @@
 
     <form name="coucou" method="post">
         <?php
-        if ($_POST["password"] != "dur4nd_g4m1ng" and $_POST["password"] != "") {
-            echo"<p class=\"error\">Mauvais mot de passe !</p>";
+        if(isset($_POST["password"])){
+            if ($_POST["password"] != "dur4nd_g4m1ng" and $_POST["password"] != "") {
+                echo"<p class=\"error\">Mauvais mot de passe !</p>";
+            }
         }
         ?>
         <label for="password">Mot de passe:</label> <input type="password" id="password" name="password"><br /><br />

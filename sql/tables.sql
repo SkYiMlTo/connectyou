@@ -7,7 +7,7 @@ CREATE OR REPLACE TABLE users
 
 DROP TABLE users;
 
-INSERT INTO users (username, mail, password) VALUES ('admin', 'admin@admin.com', 'admin');
+INSERT INTO users (username, mail, password) VALUES ('admin', 'admin@admin.com', 'mycoolsecurepassword');
 
 SELECT * FROM users WHERE username = 'admin'
 

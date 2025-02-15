@@ -1,3 +1,11 @@
+<?php
+if(isset($_POST["password"])){
+    if ($_POST["password"] == "admin") {
+        header("Location: page3-iffuerifreoifjrekopcde8.php");
+    }
+}
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -16,8 +24,10 @@
 
     <form action="page2-gibregibfrehzifbhu.php" method = "post">
         <?php
-        if ($_POST["password"] != "admin" and $_POST["password"] != "") {
-            echo"<p class=\"error\">Mauvais mot de passe !</p>";
+        if(isset($_POST["password"])) {
+            if ($_POST["password"] != "admin" and $_POST["password"] != "") {
+                echo "<p class=\"error\">Mauvais mot de passe !</p>";
+            }
         }
         ?>
         <label for="password">Mot de passe:</label> <input type="password" id="password" name="password"><br /><br />
@@ -39,10 +49,3 @@
 </body>
 </html>
 
-<?php
-
-    if ($_POST["password"] == "admin") {
-        header("Location: page3-iffuerifreoifjrekopcde8.php");
-    }
-
-?>

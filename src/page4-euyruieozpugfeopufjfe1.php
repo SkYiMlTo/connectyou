@@ -1,3 +1,10 @@
+<?php
+if(isset($_POST["password"])) {
+    if ($_POST["password"] == "Pr15_3N_FL4G_gg_ez") {
+        header("Location: page5-detrfyguioytdrtfyui552.php");
+    }
+}
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -15,25 +22,21 @@
             Attends c'est lequel déjà ? Ah oui, heureusement que j'ai mon <a href="./may_be_here-turieoturioeturioetuorie.txt" download="may_be_here" >pense-bête</a> de côté !</p>
     </div>
     <?php
-
-    if ($_POST["password"] == "azertpokjcsozmncziuizoiufecndkoijfujzdzsakoijuhr") {
-        echo "<div class=\"dialog\"><img class=\"robot\" src=\"small-robot.png\"/><p class=\"robot\">Un mot de passe super sécurisé j'ai dit ^^</p></div>";
+    if(isset($_POST["password"])) {
+        if ($_POST["password"] == "azertpokjcsozmncziuizoiufecndkoijfujzdzsakoijuhr") {
+            echo "<div class=\"dialog\"><img class=\"robot\" src=\"small-robot.png\"/><p class=\"robot\">Un mot de passe super sécurisé j'ai dit ^^</p></div>";
+        } else if ($_POST["password"] == "kjobdzyutmcyjwxmjsesjysepomxnuystpetjnjckuysterb") {
+            echo "<div class=\"dialog\"><img class=\"robot\" src=\"small-robot.png\"/><p class=\"robot\">Dans l'autre sens !</p></div>";
+        }
     }
-
-    else if ($_POST["password"] == "kjobdzyutmcyjwxmjsesjysepomxnuystpetjnjckuysterb") {
-        echo "<div class=\"dialog\"><img class=\"robot\" src=\"small-robot.png\"/><p class=\"robot\">Dans l'autre sens !</p></div>";
-    }
-
-    else if ($_POST["password"] == "qpuhjfeazsiepcdspykypeykvusdtaeyzvkzptpiqaeyzkxh") {
-        header("Location: page5-detrfyguioytdrtfyui552.php");
-    }
-
     ?>
 <br>
     <form action="page4-euyruieozpugfeopufjfe1.php" method = "post">
         <?php
-        if ($_POST["password"] != "qpuhjfeazsiepcdspykypeykvusdtaeyzvkzptpiqaeyzkxh" and $_POST["password"] != "") {
-            echo"<p class=\"error\">Mauvais mot de passe !</p>";
+        if(isset($_POST["password"])) {
+            if ($_POST["password"] != "qpuhjfeazsiepcdspykypeykvusdtaeyzvkzptpiqaeyzkxh" and $_POST["password"] != "") {
+                echo"<p class=\"error\">Mauvais mot de passe !</p>";
+            }
         }
         ?>
     <label for="password">Password:</label> <input type="password" id="password" name="password"><br /><br />
@@ -61,9 +64,3 @@
 </div>
 </body>
 </html>
-<?php
-    if ($_POST["password"] == "Pr15_3N_FL4G_gg_ez") {
-    header("Location: page5-detrfyguioytdrtfyui552.php");
-    }
-
-?>

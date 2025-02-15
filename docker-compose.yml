@@ -1,0 +1,38 @@
+services:
+  web:
+    build: ./src  # Build from the Dockerfile in the current directory
+    container_name: connectyou-web
+    ports:
+      - "8888:80"
+    restart: always
+    volumes:
+      - ./src:/var/www/html
+    networks:
+      - app-network
+    depends_on:
+      - db
+
+  db:
+    image: mysql:8.0
+    container_name: connectyou-db
+    environment:
+      MYSQL_ROOT_PASSWORD: your_root_password
+      MYSQL_DATABASE: connectyou
+      MYSQL_USER: sky
+      MYSQL_PASSWORD: root
+      TZ: Europe/Paris  # America/Montreal
+    ports:
+      - "3306:3306"
+    restart: always
+    volumes:
+      - db_data:/var/lib/mysql
+      - ./sql-init:/docker-entrypoint-initdb.d
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge
+
+volumes:
+  db_data:

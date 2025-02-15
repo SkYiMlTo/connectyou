@@ -5,8 +5,9 @@ function db_connect(){
     $username = "sky";
     $password = "root";
     $db = "connectyou";
+    $port = "3305";
 
-    return mysqli_connect($hostname,$username,$password,$db);
+    return mysqli_connect($hostname,$username,$password,$db,$port);
 }
 
 function handle_this(){
